@@ -24,6 +24,8 @@ public class GroqClient {
     private static final String TAG = "GroqClient";
     private static final int CONNECT_TIMEOUT_MS = 20000;
     private static final int READ_TIMEOUT_MS = 60000;
+    private static final int MAX_ATTEMPTS = 3;
+    private static final long RETRY_DELAY_MS = 1500;
 
     private final Context context;
 
@@ -34,6 +36,13 @@ public class GroqClient {
     // Thrown with a message that is ready to show to the user
     public static class AiException extends Exception {
         public AiException(String message) {
+            super(message);
+        }
+    }
+
+    // The AI server is temporarily busy (HTTP 5xx), so the request is worth retrying
+    private static class BusyException extends AiException {
+        BusyException(String message) {
             super(message);
         }
     }
@@ -95,6 +104,27 @@ public class GroqClient {
             throw new AiException(context.getString(R.string.err_no_api_key));
         }
 
+        // The free model is sometimes "over capacity" for a few seconds, so retry those errors
+        BusyException lastError = null;
+        for (int attempt = 1; attempt <= MAX_ATTEMPTS; attempt++) {
+            try {
+                return sendOnce(messages, temperature, maxTokens);
+            } catch (BusyException e) {
+                lastError = e;
+                Log.w(TAG, "Groq busy, attempt " + attempt + " of " + MAX_ATTEMPTS);
+                if (attempt < MAX_ATTEMPTS) {
+                    try {
+                        Thread.sleep(RETRY_DELAY_MS * attempt);
+                    } catch (InterruptedException ie) {
+                        break;
+                    }
+                }
+            }
+        }
+        throw lastError;
+    }
+
+    private JSONObject sendOnce(JSONArray messages, double temperature, int maxTokens) throws AiException {
         HttpURLConnection conn = null;
         try {
             JSONObject body = new JSONObject();
@@ -125,6 +155,10 @@ public class GroqClient {
             }
             if (code == 429) {
                 throw new AiException(context.getString(R.string.err_rate_limit));
+            }
+            if (code >= HttpURLConnection.HTTP_INTERNAL_ERROR) {
+                Log.w(TAG, "Groq error " + code + ": " + readAll(conn.getErrorStream()));
+                throw new BusyException(context.getString(R.string.err_ai_busy));
             }
             if (code != HttpURLConnection.HTTP_OK) {
                 Log.w(TAG, "Groq error " + code + ": " + readAll(conn.getErrorStream()));
