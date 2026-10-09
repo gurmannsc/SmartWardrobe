@@ -1,0 +1,323 @@
+<resources>
+    <string name="app_name">Smart Wardrobe</string>
+    <string name="made_by">Made by Gurmann</string>
+
+    <!-- ===================== Home ===================== -->
+    <string name="home_title">Smart Wardrobe</string>
+    <string name="home_subtitle">What are we wearing today?</string>
+    <string name="btn_dress_me">Dress me</string>
+    <string name="btn_add_item">Add item</string>
+    <string name="btn_my_wardrobe">My wardrobe</string>
+    <string name="btn_settings">Settings</string>
+    <string name="stats_summary">Items: %1$d · In laundry: %2$d</string>
+
+    <!-- ===================== Weather ===================== -->
+    <string name="weather_loading">Checking the weather…</string>
+    <string name="weather_set_city">Tap to set your city for weather-aware outfits</string>
+    <string name="weather_unavailable">Weather unavailable right now</string>
+    <string name="weather_summary">%1$s · %2$.0f°C, %3$s</string>
+    <string name="weather_range">High %1$.0f°C · Low %2$.0f°C · Rain %3$d%%</string>
+    <string name="weather_clear">Clear sky</string>
+    <string name="weather_partly_cloudy">Partly cloudy</string>
+    <string name="weather_cloudy">Overcast</string>
+    <string name="weather_fog">Foggy</string>
+    <string name="weather_drizzle">Drizzle</string>
+    <string name="weather_rain">Rain</string>
+    <string name="weather_snow">Snow</string>
+    <string name="weather_thunder">Thunderstorm</string>
+
+    <!-- ===================== Add item ===================== -->
+    <string name="add_title">Add an item</string>
+    <string name="add_hint">Photograph one item at a time, laid flat or on a hanger, on a plain background.</string>
+    <string name="btn_take_photo">Take photo</string>
+    <string name="btn_choose_gallery">Gallery</string>
+    <string name="btn_analyse">Identify with AI</string>
+    <string name="btn_tag_manually">Tag it myself instead</string>
+    <string name="status_processing">Preparing photo…</string>
+    <string name="status_photo_ready">Photo ready. Tap Identify with AI.</string>
+    <string name="status_analysing">AI is identifying your item…</string>
+    <string name="toast_saved_next">Saved! Add the next one.</string>
+    <string name="img_preview_desc">Photo of the clothing item</string>
+    <string name="err_no_camera">No camera app found on this phone</string>
+    <string name="err_image_load">Couldn\'t load that image, try another one</string>
+    <string name="err_pick_image_first">Take or choose a photo first</string>
+    <string name="err_not_clothing">The AI couldn\'t spot a clothing item. Try a clearer photo, or tag it yourself.</string>
+
+    <!-- ===================== Item editor ===================== -->
+    <string name="editor_title_new">Check the details</string>
+    <string name="editor_title_edit">Item details</string>
+    <string name="editor_ai_note">AI filled these in. Fix anything that\'s wrong, then save.</string>
+    <string name="label_category">Category</string>
+    <string name="label_type">Type</string>
+    <string name="label_color">Main colour</string>
+    <string name="label_secondary_color">Second colour</string>
+    <string name="label_pattern">Pattern</string>
+    <string name="label_formality">Formality</string>
+    <string name="label_seasons">Seasons</string>
+    <string name="cb_in_laundry">In laundry (skip it in suggestions)</string>
+    <string name="worn_stats">Worn %1$d times · last worn %2$s</string>
+    <string name="worn_never">Not worn yet</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_delete">Delete item</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="toast_updated">Changes saved</string>
+    <string name="toast_deleted">Item deleted</string>
+    <string name="err_pick_formality">Choose a formality</string>
+    <string name="err_pick_season">Pick at least one season</string>
+    <string name="delete_confirm_title">Delete this item?</string>
+    <string name="delete_confirm_msg">This removes it from your wardrobe for good.</string>
+
+    <!-- ===================== Wardrobe list ===================== -->
+    <string name="wardrobe_title">My wardrobe</string>
+    <plurals name="wardrobe_count">
+        <item quantity="one">%1$d item</item>
+        <item quantity="other">%1$d items</item>
+    </plurals>
+    <string name="wardrobe_empty">Your wardrobe is empty. Add your first item from the home screen.</string>
+    <string name="filter_all">All</string>
+    <string name="item_title">%1$s %2$s</string>
+    <string name="item_subtitle">%1$s · %2$s · %3$s</string>
+    <string name="status_in_laundry">In laundry</string>
+    <string name="status_worn">Worn %1$d×</string>
+    <string name="status_new">Never worn</string>
+    <string name="thumb_desc">Item thumbnail</string>
+
+    <!-- ===================== Occasion ===================== -->
+    <string name="occasion_title">Dress me for…</string>
+    <string name="occasion_weather_city">Today\'s weather in %1$s will be taken into account.</string>
+    <string name="occasion_weather_none">Set your city in Settings to get weather-aware outfits.</string>
+    <string name="occasion_note_hint">Anything else? e.g. cousin\'s mehendi, outdoor venue</string>
+    <string name="btn_suggest">Suggest outfits</string>
+    <string name="err_pick_occasion">Please select an occasion</string>
+    <string name="err_wardrobe_small">Add at least 2 items that aren\'t in the laundry first</string>
+    <string name="occ_college">College</string>
+    <string name="occ_office">Office</string>
+    <string name="occ_interview">Interview</string>
+    <string name="occ_date">Date</string>
+    <string name="occ_party">Party</string>
+    <string name="occ_festive">Festive / Puja</string>
+    <string name="occ_wedding">Wedding</string>
+    <string name="occ_gym">Gym</string>
+    <string name="occ_travel">Travel</string>
+    <string name="occ_casual">Casual outing</string>
+
+    <!-- ===================== Outfits ===================== -->
+    <string name="outfits_title">Outfits for %1$s</string>
+    <string name="status_styling">Styling your outfits…</string>
+    <string name="btn_try_again">Show me different outfits</string>
+    <string name="outfit_tip">Tip: %1$s</string>
+    <string name="outfit_default_name">Outfit %1$d</string>
+    <string name="outfit_tap_to_wear">Tap to wear this today</string>
+    <string name="outfit_item_desc">Outfit item photo</string>
+    <string name="item_separator">" · "</string>
+    <string name="outfits_none">No outfit fits this occasion from your current wardrobe.</string>
+    <string name="wear_confirm_title">Wear \"%1$s\" today?</string>
+    <string name="wear_confirm_msg">We\'ll log it so future suggestions mix things up.</string>
+    <string name="btn_wear">Wear it</string>
+    <string name="toast_worn">Logged! Have a great day.</string>
+
+    <!-- ===================== Settings ===================== -->
+    <string name="settings_title">Settings</string>
+    <string name="label_city">Your city</string>
+    <string name="city_hint">e.g. Indore</string>
+    <string name="btn_save_city">Save city</string>
+    <string name="status_finding_city">Finding your city…</string>
+    <string name="toast_city_saved">Weather set for %1$s</string>
+    <string name="err_city_empty">Enter a city name</string>
+    <string name="err_city_not_found">Couldn\'t find that city. Check the spelling.</string>
+    <string name="label_ai">AI connection</string>
+    <string name="ai_status_ok">Groq key found. AI features are on.</string>
+    <string name="ai_status_missing">No Groq key found. Add GROQ_API_KEY to secrets.properties and rebuild.</string>
+
+    <!-- ===================== Errors ===================== -->
+    <string name="err_no_api_key">AI key missing. Add GROQ_API_KEY to secrets.properties and rebuild.</string>
+    <string name="err_network">No internet connection. Check your network and try again.</string>
+    <string name="err_rate_limit">AI usage limit reached. Wait a minute and try again.</string>
+    <string name="err_ai_key_invalid">The AI key was rejected. Check GROQ_API_KEY.</string>
+    <string name="err_ai_generic">AI request failed (error %1$d). Try again.</string>
+    <string name="err_ai_bad_reply">The AI gave an unexpected answer. Try again.</string>
+
+    <!-- ===================== Clothing values ===================== -->
+    <string name="formality_casual">Casual</string>
+    <string name="formality_smart_casual">Smart casual</string>
+    <string name="formality_formal">Formal</string>
+    <string name="formality_festive">Festive</string>
+    <string name="season_summer">Summer</string>
+    <string name="season_monsoon">Monsoon</string>
+    <string name="season_winter">Winter</string>
+    <string name="color_none">None</string>
+    <string name="never">never</string>
+
+    <string-array name="categories">
+        <item>Top</item>
+        <item>Bottom</item>
+        <item>One-piece</item>
+        <item>Layer</item>
+        <item>Footwear</item>
+        <item>Accessory</item>
+    </string-array>
+
+    <!-- One type list per category, in the same order as "categories" -->
+    <string-array name="types_top">
+        <item>T-shirt</item>
+        <item>Shirt</item>
+        <item>Polo</item>
+        <item>Top</item>
+        <item>Blouse</item>
+        <item>Crop top</item>
+        <item>Tank top</item>
+        <item>Sweatshirt</item>
+        <item>Kurta</item>
+        <item>Kurti</item>
+        <item>Short kurta</item>
+        <item>Choli</item>
+    </string-array>
+    <string-array name="types_bottom">
+        <item>Jeans</item>
+        <item>Trousers</item>
+        <item>Chinos</item>
+        <item>Shorts</item>
+        <item>Track pants</item>
+        <item>Skirt</item>
+        <item>Leggings</item>
+        <item>Salwar</item>
+        <item>Churidar</item>
+        <item>Palazzo</item>
+        <item>Dhoti</item>
+        <item>Pyjama</item>
+        <item>Lehenga skirt</item>
+        <item>Sharara</item>
+    </string-array>
+    <string-array name="types_one_piece">
+        <item>Dress</item>
+        <item>Jumpsuit</item>
+        <item>Co-ord set</item>
+        <item>Saree</item>
+        <item>Anarkali</item>
+        <item>Lehenga set</item>
+        <item>Kurta set</item>
+        <item>Salwar suit</item>
+        <item>Sherwani</item>
+        <item>Bandhgala suit</item>
+        <item>Suit</item>
+    </string-array>
+    <string-array name="types_layer">
+        <item>Jacket</item>
+        <item>Denim jacket</item>
+        <item>Blazer</item>
+        <item>Nehru jacket</item>
+        <item>Hoodie</item>
+        <item>Sweater</item>
+        <item>Cardigan</item>
+        <item>Shrug</item>
+        <item>Coat</item>
+        <item>Shawl</item>
+    </string-array>
+    <string-array name="types_footwear">
+        <item>Sneakers</item>
+        <item>Formal shoes</item>
+        <item>Loafers</item>
+        <item>Boots</item>
+        <item>Sandals</item>
+        <item>Slippers</item>
+        <item>Heels</item>
+        <item>Flats</item>
+        <item>Juttis</item>
+        <item>Mojaris</item>
+        <item>Kolhapuris</item>
+        <item>Sports shoes</item>
+    </string-array>
+    <string-array name="types_accessory">
+        <item>Dupatta</item>
+        <item>Stole</item>
+        <item>Scarf</item>
+        <item>Belt</item>
+        <item>Tie</item>
+        <item>Pocket square</item>
+        <item>Cap</item>
+        <item>Pagdi / Safa</item>
+        <item>Watch</item>
+        <item>Bag</item>
+        <item>Jewellery</item>
+        <item>Sunglasses</item>
+    </string-array>
+
+    <string-array name="colors">
+        <item>Black</item>
+        <item>White</item>
+        <item>Off-white</item>
+        <item>Cream</item>
+        <item>Beige</item>
+        <item>Grey</item>
+        <item>Navy</item>
+        <item>Blue</item>
+        <item>Sky blue</item>
+        <item>Teal</item>
+        <item>Green</item>
+        <item>Olive</item>
+        <item>Mint</item>
+        <item>Yellow</item>
+        <item>Mustard</item>
+        <item>Orange</item>
+        <item>Peach</item>
+        <item>Red</item>
+        <item>Maroon</item>
+        <item>Pink</item>
+        <item>Magenta</item>
+        <item>Purple</item>
+        <item>Lavender</item>
+        <item>Brown</item>
+        <item>Tan</item>
+        <item>Gold</item>
+        <item>Silver</item>
+        <item>Multicolour</item>
+    </string-array>
+
+    <string-array name="patterns">
+        <item>Solid</item>
+        <item>Striped</item>
+        <item>Checked</item>
+        <item>Printed</item>
+        <item>Floral</item>
+        <item>Graphic</item>
+        <item>Embroidered</item>
+        <item>Block print</item>
+        <item>Bandhani</item>
+        <item>Ikat</item>
+        <item>Zari / Brocade</item>
+        <item>Textured</item>
+    </string-array>
+
+    <string-array name="formality_levels">
+        <item>@string/formality_casual</item>
+        <item>@string/formality_smart_casual</item>
+        <item>@string/formality_formal</item>
+        <item>@string/formality_festive</item>
+    </string-array>
+
+    <string-array name="seasons">
+        <item>@string/season_summer</item>
+        <item>@string/season_monsoon</item>
+        <item>@string/season_winter</item>
+    </string-array>
+
+    <!-- ===================== Config (not shown to users) ===================== -->
+    <string name="groq_url" translatable="false">https://api.groq.com/openai/v1/chat/completions</string>
+    <string name="groq_model" translatable="false">qwen/qwen3.8-27b</string>
+    <string name="geocode_url" translatable="false">https://geocoding-api.open-meteo.com/v1/search?count=1&amp;language=en&amp;format=json&amp;name=%1$s</string>
+    <string name="forecast_url" translatable="false">https://api.open-meteo.com/v1/forecast?latitude=%1$s&amp;longitude=%2$s&amp;current=temperature_2m,weather_code&amp;daily=temperature_2m_max,temperature_2m_min,precipitation_probability_max&amp;forecast_days=1&amp;timezone=auto</string>
+    <string name="file_provider_suffix" translatable="false">.fileprovider</string>
+
+    <!-- ===================== AI prompts ===================== -->
+    <string name="prompt_identify" translatable="false">You are cataloguing a wardrobe for a clothing app used in India. Look at the photo and identify the single main clothing item, footwear or accessory in it.\n\nChoose every value ONLY from these allowed lists, copying the spelling exactly:\n- category: %1$s\n- sub_type (must belong to the chosen category): %2$s\n- color and secondary_color: %3$s. Use \"%7$s\" for secondary_color if the item is basically one colour.\n- pattern: %4$s\n- formality: %5$s\n- seasons: one or more of %6$s, judged from the fabric and weight (heavy wool or velvet means Winter; light cotton or linen means Summer and Monsoon).\n\nRespond with a JSON object only, in exactly this shape:\n{\"is_clothing\": true, \"category\": \"\", \"sub_type\": \"\", \"color\": \"\", \"secondary_color\": \"\", \"pattern\": \"\", \"formality\": \"\", \"seasons\": [\"\"]}\nIf the photo does not show a clothing item, footwear or accessory, set is_clothing to false.</string>
+
+    <string name="prompt_stylist_system" translatable="false">You are an expert personal stylist who knows Indian ethnic wear as well as Western fashion. You build complete outfits using ONLY the clothes the user lists, referring to them by their id numbers.\n\nRules:\n1. Each outfit needs either one one-piece item (saree, dress, sherwani, kurta set and so on) or exactly one top plus one bottom. Add one layer, one pair of footwear and one or two accessories only when they improve the look.\n2. Match the formality and cultural feel of the occasion: festive or wedding calls for ethnic or Indo-western festive pieces, interview or office calls for formal or smart casual, gym calls for sporty pieces.\n3. Use real colour theory: neutrals as a base, complementary or analogous accents, at most three main colours, and classic Indian pairings where they fit (maroon with gold or cream, navy with white, pastel kurtas with white churidars).\n4. Dress for the weather: skip heavy layers when it is hot, prefer breathable pieces in summer, and avoid delicate or light-coloured footwear when rain is likely.\n5. Prefer items that have been worn less often or not recently, so the whole wardrobe gets used.\n6. Never invent items and never use an id that is not in the list. Make every outfit clearly different from the others.\n\nRespond with a JSON object only, in exactly this shape:\n{\"outfits\": [{\"name\": \"short catchy outfit name\", \"item_ids\": [1, 2, 3], \"reason\": \"one or two sentences on why these colours and pieces work for this occasion and weather\"}], \"missing\": \"\"}\nGive up to 3 outfits, best first. If the wardrobe cannot dress the user well for this occasion, return fewer outfits and use \"missing\" for one short tip on the single item that would help most; otherwise leave it empty.</string>
+
+    <string name="prompt_stylist_user" translatable="false">Occasion: %1$s\nMy extra notes: %2$s\nToday\'s weather: %3$s\n\nMy available clothes (id | category | type | main colour / second colour | pattern | formality | seasons | wear history):\n%4$s\n%5$s\nReturn the JSON object only.</string>
+
+    <string name="prompt_wardrobe_line" translatable="false">%1$d | %2$s | %3$s | %4$s / %5$s | %6$s | %7$s | %8$s | worn %9$d times, last worn %10$s</string>
+    <string name="prompt_avoid" translatable="false">\nI have already seen these outfits (item ids), so suggest different combinations: %1$s\n</string>
+    <string name="prompt_no_notes" translatable="false">none</string>
+    <string name="weather_for_ai" translatable="false">%1$.0f°C now (high %2$.0f°C, low %3$.0f°C), %4$s, %5$d%% chance of rain</string>
+    <string name="weather_for_ai_none" translatable="false">unknown</string>
+</resources>

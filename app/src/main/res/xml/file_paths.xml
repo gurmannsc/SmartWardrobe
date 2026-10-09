@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Folder the camera app is allowed to write the captured photo into -->
+<paths>
+    <cache-path
+        name="camera"
+        path="camera/" />
+</paths>

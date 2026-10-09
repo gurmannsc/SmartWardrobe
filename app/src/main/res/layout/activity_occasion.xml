@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".OccasionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/occasion_title"
+            style="@style/ScreenTitle" />
+
+        <TextView
+            android:id="@+id/tvWeatherNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            style="@style/BodySecondary" />
+
+        <RadioGroup
+            android:id="@+id/rgOccasion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <RadioButton
+                android:id="@+id/rbCollege"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/occ_college" />
+
+            <RadioButton
+                android:id="@+id/rbOffice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/occ_office" />
+
+            <RadioButton
+                android:id="@+id/rbInterview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/occ_interview" />
+
+            <RadioButton
+                android:id="@+id/rbDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/occ_date" />
+
+            <RadioButton
+                android:id="@+id/rbParty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/occ_party" />
+
+            <RadioButton
+                android:id="@+id/rbFestive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/occ_festive" />
+
+            <RadioButton
+                android:id="@+id/rbWedding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/occ_wedding" />
+
+            <RadioButton
+                android:id="@+id/rbGym"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/occ_gym" />
+
+            <RadioButton
+                android:id="@+id/rbTravel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/occ_travel" />
+
+            <RadioButton
+                android:id="@+id/rbCasual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/occ_casual" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/etNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/occasion_note_hint"
+            android:importantForAutofill="no"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="3"
+            android:minHeight="48dp" />
+
+        <Button
+            android:id="@+id/btnSuggest"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_suggest"
+            android:textSize="17sp" />
+    </LinearLayout>
+</ScrollView>
